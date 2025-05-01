@@ -1,0 +1,135 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    height: 100vh;
+    animation: breath 20s ease-in-out infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes breath{
+    0%{
+        background-color: #ff9a9e; 
+    }
+    30%{
+        background-color: #fad0c4; 
+    }
+    50%{
+        background-color: #ff9a9e; 
+    }
+    80%{
+        background-color: #fad0c4; 
+    }
+    100%{
+        background-color: #ff9a9e; 
+    }
+}
+
+.container{
+    width: 80vh;
+    background-color: white;
+    border-radius: 50px;
+    height: 28vh;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.quote-display{
+    width: 100%;
+    height: 100%;
+    margin: 15px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.author{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.quote-display p{
+    font-style: italic;
+    font-size: 18px;
+}
+
+.button_wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+#share-quote, .btn{
+    width: 40%;
+    height: 50px;
+    border-radius: 50px;
+    background-color: #ff9a9e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    gap: 10px;
+    font-size: 18px;
+}
+
+#share-quote img{
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+#share-quote, .btn {
+    width: 40%;
+    height: 50px;
+    border-radius: 50px;
+    background-color: #ff9a9e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    gap: 10px;
+    font-size: 18px;
+    transition: all 0.3s ease;
+    border: none;
+}
+
+#share-quote:hover, .btn:hover {
+    transform: scale(1.05);
+    background-color: #ff8088;
+    box-shadow: 0 4px 15px rgba(255, 154, 158, 0.4);
+}
+
+#share-quote:active, .btn:active {
+    transform: scale(0.98);
+    background-color: #ff6b74;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+#share-quote img {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+#share-quote:hover img {
+    transform: scale(1.1);
+}
+
+#share-quote:active img {
+    transform: scale(0.95);
+}
