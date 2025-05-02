@@ -32,15 +32,17 @@ body{
 
 .container{
     width: 80vh;
+    max-width: 800px; /* Add max-width */
+    min-height: 28vh; /* Change height to min-height */
     background-color: white;
     border-radius: 50px;
-    height: 28vh;
     padding: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    margin: 20px; /* Add margin for smaller screens */
 }
 
 .quote-display{
@@ -132,4 +134,69 @@ body{
 
 #share-quote:active img {
     transform: scale(0.95);
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+        min-height: 35vh;
+        border-radius: 30px;
+        padding: 15px;
+    }
+
+    .quote-display {
+        margin: 10px;
+        padding: 8px;
+    }
+
+    .quote-display p {
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .button_wrapper {
+        gap: 10px;
+    }
+
+    #share-quote, .btn {
+        width: 80%;
+        height: 45px;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        width: 95%;
+        min-height: 40vh;
+        border-radius: 25px;
+        padding: 12px;
+    }
+
+    .quote-display p {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 1.2rem;
+    }
+
+    #share-quote, .btn {
+        width: 90%;
+        height: 40px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (orientation: landscape) and (max-height: 500px) {
+    .container {
+        min-height: 60vh;
+    }
+    
+    .button_wrapper {
+        flex-direction: row;
+    }
 }
