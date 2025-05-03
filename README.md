@@ -7,7 +7,7 @@
 ### 📸 Preview
 
 <p align="center">
-  <img src="https://github.com/VrajChariot/Quote-Generator/blob/main/quote-generator-preview?raw=true" width="30%" />
+  <img src="https://github.com/VrajChariot/Quote-Generator/blob/main/quote-generator-preview.png?raw=true" width="30%" />
 </p>
 
 > _This image shows the app interface with a random quote and author, styled beautifully with JavaScript interactivity._
