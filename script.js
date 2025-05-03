@@ -17,5 +17,13 @@ async function getQuote() {
 }
 button.addEventListener("click", getQuote);
 
-// getQuote();
+function tweetQuote() {
+    const quote = document.querySelector(".quote").innerHTML;
+    const author = document.querySelector(".author").innerHTML;
+    const tweetUrl = `https://twitter.com/intent/tweet?text=${quote} ${author}`;
+    window.open(tweetUrl, "Tweet Window", "width=600, height=400");
+}
+
+const tweetButton = document.querySelector("#share-quote");
+tweetButton.addEventListener("click", tweetQuote);
 
